@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--tailwind css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Temperature Converter</title>
+</head>
+<body class="h-screen w-screen flex justify-center items-center bg-gradient-to-b from-[#90e0ef] from-[10%] via-[#90e0ef] via-[40%] to-[#caf0f8] to-[90%]">
+
+    <div class="bg-[#48cae4] flex flex-col justify-center items-center max-w-lg p-8 rounded-xl">
+        <h1 class="text-3xl font-semibold text-[#03045e]">🌡️ Temperature Converter</h1>
+        <!--Celsius-->
+        <div  class="mt-4 flex justify-center items-center gap-15">
+            <label class="text-xl text-[#023e8a] font-bold">Celsius:</label>
+            <input 
+                
+                id="celsius"
+                type="number"
+                step="any"
+                class="border border-[#03045e] rounded p-2 mt-2 w-full"
+                placeholder="Enter the temperature"
+            >
+        </div>
+        <!--Fahrenheit-->
+        <div  class="mt-4 flex justify-center items-center gap-7">
+            <label class="text-xl text-[#023e8a] font-bold">Fahrenheit:</label>
+            <input 
+                type="number"
+                step="any"
+                id="fahrenheit"
+                class="border border-[#03045e] rounded p-2 mt-2 w-full"
+                placeholder="Enter the temperature"
+            >
+        </div>
+        <!--Kelvin-->
+        <div  class="mt-4 flex justify-center items-center gap-17">
+            <label class="text-xl text-[#023e8a] font-bold">Kalvin:</label>
+            <input 
+                type="number"
+                step="any"
+                id="kelvin"
+                class="border border-[#03045e] rounded p-2 mt-2 w-full"
+                placeholder="Enter the temperature"
+            >
+        </div>
+
+
+
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>
